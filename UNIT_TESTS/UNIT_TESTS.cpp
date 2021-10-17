@@ -14,9 +14,9 @@ namespace UNITTESTS
 
 		TEST_METHOD(GetPerimeter_test_LengthAndWidth)
 		{
-			int Expected = 396; //the number that is expected from the function
-			int length = 99;
-			int width = 99;
+			int Expected = 230; //the number that is expected from the function
+			int length = 58;
+			int width = 57;
 			int input = getPerimeter(&length, &width);//storing the permiter recieved from the function into integer input
 
 			Assert::AreEqual(Expected, input);//checking to see if the Expected and result of the function equal each other
@@ -24,6 +24,13 @@ namespace UNITTESTS
 		}
 		TEST_METHOD(GetArea_test_LengthAndWidth)
 		{
+			int ExpectedArea = 50;//the number the area is expected to be
+			int length = 25;
+			int width = 2;
+			int Area = getArea(&length, &width);//storing area recived from the function
+
+			Assert::AreEqual(Area, ExpectedArea);//asserts to see if the expected area is the same as gained area from the function
+
 		}
 		TEST_METHOD(TestMethod2)
 		{
